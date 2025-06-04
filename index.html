@@ -34,26 +34,35 @@
    <div class="header_section">
       <div class="container">
          <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="index.html"><img src="images/cafetaria-logo.png " style="width: 80px;
-  height: 80px;
-  object-fit: cover;
-  display: block;
-  padding: 0;
-  margin: 0;"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-               aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-               <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <a class="navbar-brand" href="index.html"><img src="images/cafetaria-logo.png"
+                  style="width: 80px; height: 80px; object-fit: cover;"></a>
+
+            <div class="d-flex align-items-center order-lg-3">
+               <form class="form-inline my-2 my-lg-0">
+                  <svg id="cart-icon" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                     class="bi bi-cart" viewBox="0 0 16 16" style="cursor: pointer;">
+                     <path
+                        d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+                  </svg>
+               </form>
+
+               <button class="navbar-toggler ml-2" type="button" data-toggle="collapse"
+                  data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                  aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+               </button>
+            </div>
+
+            <div class="collapse navbar-collapse order-lg-2" id="navbarSupportedContent">
                <ul class="navbar-nav ml-auto">
-                  <li class="nav-item active">
+                  <li class="nav-item">
                      <a class="nav-link" href="index.html">Home</a>
                   </li>
                   <li class="nav-item">
                      <a class="nav-link" href="about.html">About</a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link" href="icecream.html">Product</a>
+                     <a class="nav-link" href="icecream.html">Products</a>
                   </li>
                   <li class="nav-item">
                      <a class="nav-link" href="services.html">Services</a>
@@ -65,18 +74,6 @@
                      <a class="nav-link" href="contact.html">Contact Us</a>
                   </li>
                </ul>
-               <!-- Cart Icon -->
-               <form class="form-inline my-2 my-lg-0">
-                  <svg id="cart-icon" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
-                     class="bi bi-cart" viewBox="0 0 16 16" style="cursor: pointer;">
-                     <path
-                        d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
-                  </svg>
-               </form>
-               <div id="cart" class="cart hidden">
-                  <ul id="cart-items"></ul>
-               </div>
-
             </div>
          </nav>
       </div>
@@ -184,62 +181,63 @@
                <div class="container">
                   <div class="row">
                      <div class="col-md-12">
-                        <h1 class="cream_taital">Our Featured Ice Cream</h1>
-                        <p class="cream_text">tempor incididunt ut labore et dolore magna aliqua</p>
+                        <h1 class="cream_taital2">Produk Pilihan Kami</h1>
+                        <p class="cream_text"></p>
                      </div>
                   </div>
                   <div class="cream_section_2">
                      <div class="row">
                         <div class="col-md-4">
                            <div class="cream_box">
-                              <div class="cream_img"><img src="images/img-1.png"></div>
-                              <div class="price_text">$10</div>
-                              <h6 class="strawberry_text">Strawberry Ice Cream</h6>
-                              <div class="cart_bt"><a href="#" class="add-to-cart" data-name="Strawberry Ice Cream"
-                                    data-price="10">Add To Cart</a></div>
-                           </div>
-                        </div>
-                        <div class="col-md-4">
-                           <div class="cream_box">
-                              <div class="cream_img"><img src="images/img-2.png"></div>
-                              <div class="price_text">$10</div>
-                              <h6 class="strawberry_text">Strawberry Ice Cream</h6>
+                              <div class="cream_img"><img class="img-fluid"
+                                    src="images/bbeng_maxx.png" alt="bbng mex"></div>
+                              <div class="price_text">3k</div>
+                              <h6 class="strawberry_text">Beng-Beng Maxx</h6>
                               <div class="cart_bt"><a href="#">Add To Cart</a></div>
                            </div>
                         </div>
                         <div class="col-md-4">
                            <div class="cream_box">
-                              <div class="cream_img"><img src="images/img-1.png"></div>
-                              <div class="price_text">$10</div>
-                              <h6 class="strawberry_text">Strawberry Ice Cream</h6>
-                              <div class="cart_bt"><a href="#">Add To Cart</a></div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="cream_section_2">
-                     <div class="row">
-                        <div class="col-md-4">
-                           <div class="cream_box">
-                              <div class="cream_img"><img src="images/img-3.png"></div>
-                              <div class="price_text">$10</div>
-                              <h6 class="strawberry_text">Strawberry Ice Cream</h6>
+                              <div class="cream_img"><img class="img-fluid" src="images/nabati.png" alt="nabati">
+                              </div>
+                              <div class="price_text">2k</div>
+                              <h6 class="strawberry_text">Nabati</h6>
                               <div class="cart_bt"><a href="#">Add To Cart</a></div>
                            </div>
                         </div>
                         <div class="col-md-4">
                            <div class="cream_box">
-                              <div class="cream_img"><img src="images/img-4.png"></div>
-                              <div class="price_text">$10</div>
-                              <h6 class="strawberry_text">Strawberry Ice Cream</h6>
+                              <div class="cream_img"><img class="img-fluid" src="images/bbeng.png" alt="bbeng share">
+                              </div>
+                              <div class="price_text">2k</div>
+                              <h6 class="strawberry_text">Beng-Beng</h6>
                               <div class="cart_bt"><a href="#">Add To Cart</a></div>
                            </div>
                         </div>
                         <div class="col-md-4">
                            <div class="cream_box">
-                              <div class="cream_img"><img src="images/img-5.png"></div>
-                              <div class="price_text">$10</div>
-                              <h6 class="strawberry_text">Strawberry Ice Cream</h6>
+                              <div class="cream_img"><img class="img-fluid"
+                                    src="images/wawan_es.png" alt="es wawan"></div>
+                              <div class="price_text">5K</div>
+                              <h6 class="strawberry_text">Es Wawan</h6>
+                              <div class="cart_bt"><a href="#">Add To Cart</a></div>
+                           </div>
+                        </div>
+                        <div class="col-md-4">
+                           <div class="cream_box">
+                              <div class="cream_img"><img class="img-fluid" src="images/puding.png" alt="pudding">
+                              </div>
+                              <div class="price_text">5K</div>
+                              <h6 class="strawberry_text">Pudding Vla</h6>
+                              <div class="cart_bt"><a href="#">Add To Cart</a></div>
+                           </div>
+                        </div>
+                        <div class="col-md-4">
+                           <div class="cream_box">
+                              <div class="cream_img"><img class="img-fluid" src="images/sempol.png" alt="sempol">
+                              </div>
+                              <div class="price_text">5K</div>
+                              <h6 class="strawberry_text">Sempol</h6>
                               <div class="cart_bt"><a href="#">Add To Cart</a></div>
                            </div>
                         </div>
@@ -259,7 +257,7 @@
             <!-- testimonial section end -->
             <!-- contact section start -->
             <div class="contact_section layout_padding" id="contact-section">
-                <div class="container">
+               <div class="container">
                   <div class="row">
                      <div class="col-md-4">
                         <div class="contact_main">
@@ -327,6 +325,7 @@
             <!-- sidebar -->
             <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
             <script src="js/custom.js"></script>
+            <script src="js/penjualan-cart.js"></script>
             <!-- javascript -->
             <script>
                $(document).ready(function () {

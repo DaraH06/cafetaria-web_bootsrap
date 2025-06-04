@@ -34,26 +34,36 @@
    <div class="header_section header_bg">
       <div class="container">
          <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="index.html"><img src="images/cafetaria-logo.png " style="width: 80px;
-  height: 80px;
-  object-fit: cover;
-  display: block;
-  padding: 0;
-  margin: 0;"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-               aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-               <span class="navbar-toggler-icon"></span>
-            </button>
+            <a class="navbar-brand" href="index.html"><img src="images/cafetaria-logo.png"
+                  style="width: 80px; height: 80px; object-fit: cover;"></a>
+
+            <div class="d-flex align-items-center order-lg-3">
+               <form class="form-inline my-2 my-lg-0">
+                  <svg id="cart-icon" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                     class="bi bi-cart" viewBox="0 0 16 16" style="cursor: pointer;">
+                     <path
+                        d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+                  </svg>
+               </form>
+
+               <button class="navbar-toggler ml-2" type="button" data-toggle="collapse"
+                  data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                  aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+               </button>
+            </div>
+
+
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                <ul class="navbar-nav ml-auto">
-                  <li class="nav-item ">
+                  <li class="nav-item">
                      <a class="nav-link" href="index.html">Home</a>
                   </li>
                   <li class="nav-item">
                      <a class="nav-link" href="about.html">About</a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link" href="icecream.html">Icecream</a>
+                     <a class="nav-link" href="icecream.html">Products</a>
                   </li>
                   <li class="nav-item active">
                      <a class="nav-link" href="services.html">Services</a>
@@ -65,17 +75,6 @@
                      <a class="nav-link" href="contact.html">Contact Us</a>
                   </li>
                </ul>
-               <!-- Cart Icon -->
-               <form class="form-inline my-2 my-lg-0">
-                  <svg id="cart-icon" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
-                     class="bi bi-cart" viewBox="0 0 16 16" style="cursor: pointer;">
-                     <path
-                        d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
-                  </svg>
-               </form>
-               <div id="cart" class="cart hidden">
-                  <ul id="cart-items"></ul>
-               </div>
             </div>
          </nav>
       </div>
@@ -141,6 +140,7 @@
    <!-- sidebar -->
    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
    <script src="js/custom.js"></script>
+   <script src="js/penjualan-cart.js"></script>
    <!-- javascript -->
 </body>
 
