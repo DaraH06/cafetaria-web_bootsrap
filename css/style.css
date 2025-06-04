@@ -696,7 +696,7 @@ button {
     content: '';
     width: 120px;
     height: 102px;
-    background-image: url(../images/quick-icon.png);
+    /* background-image: url(../images/quick-icon.png); */
     background-size: 100%;
     left: 40px;
     top: 290px;
@@ -707,7 +707,7 @@ button {
     content: '';
     width: 120px;
     height: 102px;
-    background-image: url(../images/quick-icon.png);
+    /* background-image: url(../images/quick-icon.png); */
     background-size: 100%;
     right: 40px;
     top: 290px;

@@ -250,105 +250,16 @@
             </div>
             <!-- cream sectuion end -->
             <!-- services section start -->
-            <div class="services_section layout_padding">
-               <div class="container">
-                  <div class="row">
-                     <div class="col-md-12">
-                        <h1 class="services_taital">Our Ice Cream Services</h1>
-                        <p class="services_text">tempor incididunt ut labore et dolore magna aliqua</p>
-                     </div>
-                  </div>
-                  <div class="services_section_2">
-                     <div class="row">
-                        <div class="col-md-4">
-                           <div class="services_box">
-                              <h5 class="tasty_text"><span class="icon_img"><img src="images/icon-1.png"></span>Cookies
-                                 Ice Cream</h5>
-                              <p class="lorem_text">commodo consequat. Duis aute irure dolor in reprehenderit in
-                                 voluptate velit esse cillum dolore eu fat </p>
-                           </div>
-                        </div>
-                        <div class="col-md-4">
-                           <div class="services_box">
-                              <h5 class="tasty_text"><span class="icon_img"><img src="images/icon-2.png"></span>Cookies
-                                 Ice Cream</h5>
-                              <p class="lorem_text">commodo consequat. Duis aute irure dolor in reprehenderit in
-                                 voluptate velit esse cillum dolore eu fat </p>
-                           </div>
-                        </div>
-                        <div class="col-md-4">
-                           <div class="services_box">
-                              <h5 class="tasty_text"><span class="icon_img"><img src="images/icon-1.png"></span>Cookies
-                                 Ice Cream</h5>
-                              <p class="lorem_text">commodo consequat. Duis aute irure dolor in reprehenderit in
-                                 voluptate velit esse cillum dolore eu fat </p>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="seemore_bt"><a href="#">Read More</a></div>
-               </div>
+            <div class="services_section layout_padding" id="services-section">
             </div>
             <!-- services section end -->
             <!-- testimonial section start -->
-            <div class="testimonial_section layout_padding">
-               <div class="container">
-                  <div class="row">
-                     <div class="col-md-12">
-                        <h1 class="testimonial_taital">Testimonial</h1>
-                     </div>
-                  </div>
-                  <div class="testimonial_section_2">
-                     <div class="row">
-                        <div class="col-md-12">
-                           <div class="testimonial_box">
-                              <div id="main_slider" class="carousel slide" data-ride="carousel">
-                                 <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                       <p class="testimonial_text">tempor incididunt ut labore et dolore magna aliqua.
-                                          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                                          aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                                          voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                                       </p>
-                                       <h4 class="client_name">Marri Fen</h4>
-                                       <div class="client_img"><img src="images/client-img.png"></div>
-                                    </div>
-                                    <div class="carousel-item">
-                                       <p class="testimonial_text">tempor incididunt ut labore et dolore magna aliqua.
-                                          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                                          aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                                          voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                                       </p>
-                                       <h4 class="client_name">Marri Fen</h4>
-                                       <div class="client_img"><img src="images/client-img.png"></div>
-                                    </div>
-                                    <div class="carousel-item">
-                                       <p class="testimonial_text">tempor incididunt ut labore et dolore magna aliqua.
-                                          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                                          aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                                          voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                                       </p>
-                                       <h4 class="client_name">Marri Fen</h4>
-                                       <div class="client_img"><img src="images/client-img.png"></div>
-                                    </div>
-                                 </div>
-                                 <a class="carousel-control-prev" href="#main_slider" role="button" data-slide="prev">
-                                    <i class="fa fa-angle-left"></i>
-                                 </a>
-                                 <a class="carousel-control-next" href="#main_slider" role="button" data-slide="next">
-                                    <i class="fa fa-angle-right"></i>
-                                 </a>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
+            <div class="testimonial_section layout_padding" id="testimoni-section">
             </div>
             <!-- testimonial section end -->
             <!-- contact section start -->
-            <div class="contact_section layout_padding">
-               <div class="container">
+            <div class="contact_section layout_padding" id="contact-section">
+                <div class="container">
                   <div class="row">
                      <div class="col-md-4">
                         <div class="contact_main">
@@ -402,8 +313,8 @@
             <!-- copyright section start -->
             <div class="copyright_section">
                <div class="container">
-                  <p class="copyright_text">2025 All Rights Reserved. Design by <a href="https://html.design">Darah
-                        Teguh</a> and my partner Refangg,Varlandd,Firdatok</p>
+                  <p class="copyright_text">© 2025 Kelompok Cafetaria. Desain oleh Cafetaria team.
+                     </a></p>
                </div>
             </div>
             <!-- copyright section end -->
@@ -417,6 +328,13 @@
             <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
             <script src="js/custom.js"></script>
             <!-- javascript -->
+            <script>
+               $(document).ready(function () {
+                  $('#services-section').load('sections/services.html');
+                  $('#testimoni-section').load('sections/testimonial.html');
+                  $('#contact-section').load('sections/contact.html');
+               });
+            </script>
 </body>
 
 </html>

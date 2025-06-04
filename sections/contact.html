@@ -1,0 +1,75 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="contact_main">
+                <h1 style="width: 300px;" class="contact_taital">Hubungi Kami</h1>
+                <form id="waForm">
+                    <div class="form-group">
+                        <input type="text" id="nama" class="email-bt" placeholder="Nama" name="Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="asal" class="email-bt" placeholder="Asal" name="Asal">
+                    </div>
+                    <div class="form-group">
+                        <textarea id="pesan" class="massage-bt" placeholder="Pesan" rows="5" name="Massage"></textarea>
+                    </div>
+                </form>
+                <div class="main_bt">
+                    <a href="#" onclick="kirimWA()">Kirim</a>
+                </div>
+            </div>
+        </div>
+        <div style="margin-top: 120px; padding-left: 60px;" class="col-md-8">
+            <div class="location_text">
+                <ul>
+                    <li>
+                        <a href="https://www.google.com/maps/place/Fakultas+Pertanian+Universitas+Jember/@-8.1636614,113.716284,19z/data=!4m14!1m7!3m6!1s0x2dd6959efd82c2eb:0x2d7c8b77f29c0036!2sFakultas+Pertanian+Universitas+Jember!8m2!3d-8.1635795!4d113.7165695!16s%2Fg%2F11v9ggsbkp!3m5!1s0x2dd6959efd82c2eb:0x2d7c8b77f29c0036!8m2!3d-8.1635795!4d113.7165695!16s%2Fg%2F11v9ggsbkp?entry=ttu&g_ep=EgoyMDI1MDYwMS4wIKXMDSoASAFQAw%3D%3D"" target="
+                            _blank">
+                            <span class="padding_left_10 active"><i class="fa fa-map-marker"
+                                    aria-hidden="true"></i></span>jln. Kalimantan No. 37 – Kampus Tegalboto Kotak POS
+                            159
+                            Jember, Jawa Timur</a>
+                    </li>
+                    <li>
+                        <a href="https://wa.me/6281235296350" target="_blank">
+                            <span class="padding_left_10"><i class="fa fa-phone" aria-hidden="true"></i></span>Call :
+                            +62
+                            81235296350
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <span class="padding_left_10"><i class="fa fa-envelope" aria-hidden="true"></i></span>Email
+                            :
+                            cafetaria@gmail.com
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    function kirimWA() {
+        var nama = document.getElementById("nama").value.trim();
+        var asal = document.getElementById("asal").value.trim();
+        var pesan = document.getElementById("pesan").value.trim();
+
+        if (nama === "" || asal === "" || pesan === "") {
+            alert("Mohon isi semua kolom terlebih dahulu.");
+            return;
+        }
+
+        var nomor = "6281235296350";
+        var text = `Halo, saya ingin menghubungi:
+
+*Nama:* ${nama}
+*Asal:* ${asal}
+*Pesan:* ${pesan}`;
+
+        var encodedText = encodeURIComponent(text);
+
+        var waUrl = `https://wa.me/${nomor}?text=${encodedText}`;
+        window.open(waUrl, '_blank');
+    }
+</script>
