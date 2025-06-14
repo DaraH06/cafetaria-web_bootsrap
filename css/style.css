@@ -522,6 +522,12 @@ button {
     box-shadow: 0px 0px 20px 10px #ededec;
     margin-bottom: 30px;
     /* Beri jarak antar box jika bertumpuk di mobile */
+    display: none;
+}
+
+.cream_box.visible {
+    display: block;
+    /* atau flex, tergantung kebutuhan */
 }
 
 .cream_box:hover {
