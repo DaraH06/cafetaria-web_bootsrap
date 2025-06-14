@@ -151,7 +151,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <div class="success-popup">
                 <div class="success-icon">✔</div>
                 <h2>Pembelian Berhasil!</h2>
-                <p>Terima kasih telah mencoba prototipe ini.</p>
+                <p>Terima kasih telah berbelanja 😊😊</p>
                 <button class="success-close-btn">OK</button>
             </div>
         `;
