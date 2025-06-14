@@ -101,7 +101,7 @@ h4 a,
 h5 a,
 h6 a {
     color: #212121;
-    text-decoration: none!important;
+    text-decoration: none !important;
     opacity: 1
 }
 
@@ -146,7 +146,7 @@ img {
     height: auto;
 }
 
- :focus {
+:focus {
     outline: 0;
 }
 
@@ -295,18 +295,20 @@ button {
     width: 100%;
     float: left;
     /* Padding akan disesuaikan di media query untuk mobile */
-    padding: 90px 0px 145px 0px; 
+    padding: 90px 0px 145px 0px;
 }
 
 .banner_taital {
-    width: 30%; /* Ini untuk desktop */
+    width: 30%;
+    /* Ini untuk desktop */
     font-size: 60px;
     color: #222222;
     font-weight: bold;
 }
 
 .banner_text {
-    width: 70%; /* Ini untuk desktop */
+    width: 70%;
+    /* Ini untuk desktop */
     font-size: 16px;
     color: #222222;
     margin: 0px;
@@ -345,7 +347,7 @@ button {
     border: none;
     text-indent: 0;
     /* padding-top akan disesuaikan untuk mobile jika perlu */
-    padding-top: 25px; 
+    padding-top: 25px;
     justify-content: center;
     align-items: center;
     font-weight: bold;
@@ -357,11 +359,11 @@ button {
 
 .carousel-indicators {
     /* Posisi akan disesuaikan di media query untuk mobile */
-    bottom: -40px; 
+    bottom: -40px;
     justify-content: left;
     margin-right: initial;
     margin-left: 0px;
-}   
+}
 
 /* banner section end */
 
@@ -455,7 +457,7 @@ button {
     background-repeat: no-repeat;
     bottom: 80px;
     /* Tambahkan left: 0; jika ingin di kiri, atau hapus jika tidak ingin ada di mobile */
-    /* left: 0; */ 
+    /* left: 0; */
 }
 
 .cream_section::before {
@@ -471,14 +473,18 @@ button {
 }
 
 .cream_taital {
-    width: 100%; /* Biarkan ini 100% agar responsif, nanti diatur oleh kolom grid parent */
+    width: 100%;
+    /* Biarkan ini 100% agar responsif, nanti diatur oleh kolom grid parent */
     float: left;
     font-size: 40px;
     color: #373736;
     font-weight: bold;
-    margin-bottom: 5px; /* Beri jarak ke teks deskripsi */
+    margin-bottom: 5px;
+    /* Beri jarak ke teks deskripsi */
 }
-.cream_taital2 { /* Jika ini variasi judul lain, perlakuannya sama */
+
+.cream_taital2 {
+    /* Jika ini variasi judul lain, perlakuannya sama */
     width: 100%;
     float: left;
     font-size: 40px;
@@ -496,7 +502,8 @@ button {
     float: left;
     font-size: 16px;
     color: #373736;
-    margin: 0px 0px 30px 0px; /* Beri jarak ke produk di bawahnya */
+    margin: 0px 0px 30px 0px;
+    /* Beri jarak ke produk di bawahnya */
 }
 
 .cream_section_2 {
@@ -508,36 +515,46 @@ button {
 .cream_box {
     width: 100%;
     float: left;
-    background-image: linear-gradient( 0deg, #ffffff 37%, #f2f2f0 37%);
-    height: auto; /* Biarkan tinggi menyesuaikan konten */
+    background-image: linear-gradient(0deg, #ffffff 37%, #f2f2f0 37%);
+    height: auto;
+    /* Biarkan tinggi menyesuaikan konten */
     padding: 20px;
     box-shadow: 0px 0px 20px 10px #ededec;
-    margin-bottom: 30px; /* Beri jarak antar box jika bertumpuk di mobile */
+    margin-bottom: 30px;
+    /* Beri jarak antar box jika bertumpuk di mobile */
 }
 
 .cream_box:hover {
-    background-image: linear-gradient( 0deg, #ffffff 37%, #faf0c7 37%);
+    background-image: linear-gradient(0deg, #ffffff 37%, #faf0c7 37%);
 }
 
 /* === PERBAIKAN UNTUK GAMBAR PRODUK === */
 .cream_img {
     width: 100%;
     text-align: center;
-    height: 200px;      /* TENTUKAN TINGGI KONSISTEN UNTUK AREA GAMBAR */
-                        /* Sesuaikan angka ini. Ini membantu semua kartu produk terlihat seragam */
-    overflow: hidden;   /* Mencegah gambar 'bocor' jika menggunakan object-fit: cover */
-    margin-bottom: 20px; /* Ganti padding-bottom dengan margin-bottom */
+    height: 200px;
+    /* TENTUKAN TINGGI KONSISTEN UNTUK AREA GAMBAR */
+    /* Sesuaikan angka ini. Ini membantu semua kartu produk terlihat seragam */
+    overflow: hidden;
+    /* Mencegah gambar 'bocor' jika menggunakan object-fit: cover */
+    margin-bottom: 20px;
+    /* Ganti padding-bottom dengan margin-bottom */
 }
 
-.cream_img img.img-fluid { /* Menargetkan gambar produk setelah Anda menambahkan class img-fluid */
-    max-width: 100%;   
-    max-height: 100%;  
-    width: auto;       /* Biarkan lebar menyesuaikan aspek rasio berdasarkan tinggi */
-    height: 100%;      /* Gambar akan mencoba mengisi tinggi kontainer .cream_img */
-    object-fit: contain; /* KUNCI: Seluruh gambar terlihat, aspek rasio terjaga.
+.cream_img img.img-fluid {
+    /* Menargetkan gambar produk setelah Anda menambahkan class img-fluid */
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    /* Biarkan lebar menyesuaikan aspek rasio berdasarkan tinggi */
+    height: 100%;
+    /* Gambar akan mencoba mengisi tinggi kontainer .cream_img */
+    object-fit: contain;
+    /* KUNCI: Seluruh gambar terlihat, aspek rasio terjaga.
                             Alternatif: 'cover' jika ingin mengisi area tapi mungkin terpotong. */
-    margin: 0 auto;    
+    margin: 0 auto;
 }
+
 /* === AKHIR PERBAIKAN GAMBAR PRODUK === */
 
 
@@ -552,9 +569,12 @@ button {
     padding: 18px 15px;
     border-radius: 100px;
     font-style: italic;
-    position: relative; /* Agar bisa diatur z-index jika diperlukan */
-    z-index: 1; /* Agar di atas background box */
-    margin-top: -40px; /* Tarik ke atas agar sedikit menimpa area gambar/batas background */
+    position: relative;
+    /* Agar bisa diatur z-index jika diperlukan */
+    z-index: 1;
+    /* Agar di atas background box */
+    margin-top: -40px;
+    /* Tarik ke atas agar sedikit menimpa area gambar/batas background */
 }
 
 .strawberry_text {
@@ -563,7 +583,8 @@ button {
     color: #373736;
     text-align: center;
     font-weight: bold;
-    padding-top: 15px; /* Jarak dari harga */
+    padding-top: 15px;
+    /* Jarak dari harga */
 }
 
 .cart_bt {
@@ -594,8 +615,10 @@ button {
     margin: 0 auto;
     text-align: center;
     padding-top: 50px;
-    display: flex; /* Dihapus float dari child, jadi parent bisa flex */
-    justify-content: center; /* Pusatkan tombol See More */
+    display: flex;
+    /* Dihapus float dari child, jadi parent bisa flex */
+    justify-content: center;
+    /* Pusatkan tombol See More */
 }
 
 .seemore_bt a {
@@ -621,30 +644,39 @@ button {
     .cream_section {
         padding: 50px 0px 30px 0px;
     }
+
     .cream_taital,
     .cream_taital2 {
-        font-size: 30px; /* Kecilkan judul di mobile */
-        text-align: center; /* Judul di tengah */
+        font-size: 30px;
+        /* Kecilkan judul di mobile */
+        text-align: center;
+        /* Judul di tengah */
         width: 100%;
         float: none;
     }
+
     .cream_text {
-        text-align: center; /* Teks deskripsi di tengah */
+        text-align: center;
+        /* Teks deskripsi di tengah */
     }
+
     /* Sembunyikan pseudo-elements dekoratif di mobile jika mengganggu layout */
     .cream_section::after,
     .cream_section::before {
         display: none;
     }
-    .cream_taital2::after, 
+
+    .cream_taital2::after,
     .cream_taital::after {
         /* Atur ulang posisi garis bawah judul atau sembunyikan */
         /* Contoh: right: 50%; transform: translateX(50%); width: 60px; */
-        display: none; /* Paling mudah disembunyikan jika rumit */
+        display: none;
+        /* Paling mudah disembunyikan jika rumit */
     }
 
     .cream_img {
-        height: 180px; /* Tinggi area gambar lebih kecil di HP */
+        height: 180px;
+        /* Tinggi area gambar lebih kecil di HP */
     }
 
     /* Gambar akan otomatis menyesuaikan karena object-fit: contain dan img-fluid */
@@ -801,6 +833,16 @@ button {
     padding-top: 40px;
 }
 
+.client_img img {
+    width: 150px;
+    /* atau bisa disesuaikan seperti 120px */
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    /* membuatnya bulat */
+    margin-top: 10px;
+}
+
 .client_img {
     width: 100%;
     text-align: center;
@@ -827,7 +869,7 @@ button {
     opacity: 1;
     font-size: 30px;
     color: #ffffff;
-     z-index: 10;
+    z-index: 10;
 }
 
 #main_slider .carousel-control-prev:hover,
@@ -1110,67 +1152,88 @@ textarea#comment.update_mail::placeholder {
 @media (max-width: 575.98px) {
 
     .banner_section {
-        padding: 40px 0px 50px 0px; /* Kurangi padding atas-bawah di mobile */
+        padding: 40px 0px 50px 0px;
+        /* Kurangi padding atas-bawah di mobile */
     }
 
     /* Kolom pertama (yang berisi teks dan tombol) */
     .banner_section .carousel-item .row .col-sm-6:first-child {
-        text-align: center; /* Agar tombol juga ikut ke tengah */
-        order: 2; /* Jadikan urutan ke-2 (setelah indikator) */
-        margin-top: 20px; /* Beri jarak dari indikator di atasnya */
+        text-align: center;
+        /* Agar tombol juga ikut ke tengah */
+        order: 2;
+        /* Jadikan urutan ke-2 (setelah indikator) */
+        margin-top: 20px;
+        /* Beri jarak dari indikator di atasnya */
     }
 
     .banner_taital {
-        width: 100%; /* Ambil lebar penuh di mobile */
-        font-size: 32px; /* Kecilkan font judul */
+        width: 100%;
+        /* Ambil lebar penuh di mobile */
+        font-size: 32px;
+        /* Kecilkan font judul */
         text-align: center;
         margin-bottom: 10px;
     }
 
     .banner_text {
-        width: 100%; /* Ambil lebar penuh di mobile */
+        width: 100%;
+        /* Ambil lebar penuh di mobile */
         font-size: 14px;
         text-align: center;
         margin-bottom: 20px;
     }
 
     .started_text {
-        width: auto; /* Biarkan lebar tombol menyesuaikan kontennya */
-        float: none; /* Hapus float agar bisa di-center */
-        display: inline-block; /* Agar bisa di-center dengan text-align parent */
-        padding-top: 0; /* Hapus padding-top jika sudah diatur oleh margin-bottom teks */
+        width: auto;
+        /* Biarkan lebar tombol menyesuaikan kontennya */
+        float: none;
+        /* Hapus float agar bisa di-center */
+        display: inline-block;
+        /* Agar bisa di-center dengan text-align parent */
+        padding-top: 0;
+        /* Hapus padding-top jika sudah diatur oleh margin-bottom teks */
     }
 
     /* Kolom yang berisi gambar (secara HTML adalah anak kedua dari .row) */
     .banner_section .carousel-item .row .col-sm-6:last-child {
-        order: -1; /* Pindahkan kolom gambar ini ke paling atas dalam .row */
+        order: -1;
+        /* Pindahkan kolom gambar ini ke paling atas dalam .row */
     }
 
     .banner_img {
-        text-align: center; /* Pusatkan gambar di dalam kolomnya */
-        margin-bottom: 20px; /* Jarak antara gambar dan indikator di bawahnya */
+        text-align: center;
+        /* Pusatkan gambar di dalam kolomnya */
+        margin-bottom: 20px;
+        /* Jarak antara gambar dan indikator di bawahnya */
     }
-    
+
     .banner_img img {
-        max-width: 80% !important; /* Paksa max-width agar lebih kecil di mobile */
+        max-width: 80% !important;
+        /* Paksa max-width agar lebih kecil di mobile */
         height: auto;
         margin: 0 auto;
     }
 
     /* Atur posisi indikator carousel agar berada di bawah gambar */
     #carouselExampleIndicators .carousel-indicators {
-        position: relative; /* Kembalikan ke alur normal dokumen */
-        bottom: auto; /* Hapus properti bottom jika ada dari style desktop */
-        order: 1; /* Jadikan urutan ke-1 (setelah gambar, sebelum teks) - INI RELATIF TERHADAP SIBLINGNYA (.carousel-inner) */
-                  /* Karena .carousel-indicators adalah sibling dari .carousel-inner,
+        position: relative;
+        /* Kembalikan ke alur normal dokumen */
+        bottom: auto;
+        /* Hapus properti bottom jika ada dari style desktop */
+        order: 1;
+        /* Jadikan urutan ke-1 (setelah gambar, sebelum teks) - INI RELATIF TERHADAP SIBLINGNYA (.carousel-inner) */
+        /* Karena .carousel-indicators adalah sibling dari .carousel-inner,
                      dan .carousel-inner berisi .row yang sudah di-order,
                      kita atur margin-top agar pas di bawah gambar */
         justify-content: center;
-        margin-top: 0; /* Akan diletakkan setelah .carousel-inner (yang berisi gambar dan teks) */
-                       /* Triknya adalah .banner_img punya margin-bottom, dan .col-sm-6:first-child punya margin-top */
+        margin-top: 0;
+        /* Akan diletakkan setelah .carousel-inner (yang berisi gambar dan teks) */
+        /* Triknya adalah .banner_img punya margin-bottom, dan .col-sm-6:first-child punya margin-top */
         padding-left: 0;
-        margin-left: auto; /* Untuk centering jika parentnya tidak flex */
-        margin-right: auto; /* Untuk centering jika parentnya tidak flex */
+        margin-left: auto;
+        /* Untuk centering jika parentnya tidak flex */
+        margin-right: auto;
+        /* Untuk centering jika parentnya tidak flex */
         /* Kita letakkan ini setelah .carousel-inner, jadi jaraknya dari gambar diatur oleh margin-bottom gambar */
         /* dan jaraknya ke teks diatur oleh margin-top kolom teks */
     }
@@ -1183,8 +1246,9 @@ textarea#comment.update_mail::placeholder {
 
     /* Jika ada margin negatif di slide 4, atur ulang untuk mobile */
     .carousel-item.mt-n5 {
-        margin-top: 0 !important; 
+        margin-top: 0 !important;
     }
+
     .carousel-item .col-sm-6[style*="margin-top"] {
         margin-top: 0 !important;
     }
